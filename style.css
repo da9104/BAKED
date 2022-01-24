@@ -781,11 +781,23 @@ footer .logo p {
 }
 
 @media only screen and (max-width: 375px) {
+  nav ul li a {
+    font-size: 12px;
+  }
   .slices {
     padding: 10px;
   }
   .title {
     display: none;
+  }
+  .souls {
+    padding: 10px;
+  }
+  .shop a.btn {
+    right: 150px !important;
+  }
+  .cropped {
+    margin: 0 auto;
   }
   .cropped img {
     margin: 0 auto;
