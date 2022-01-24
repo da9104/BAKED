@@ -1,0 +1,853 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap");
+@font-face {
+  font-family: 'GillSans-01';
+  src: url("./assets/fonts/GillSans-01/GillSans-01.woff") format("woff"), url("./assets/fonts/GillSans-01/GillSans-01.woff2") format("woff2"), url("./assets/fonts/GillSans-01/GillSans-01.svg#GillSans-01") format("svg"), url("./assets/fonts/GillSans-01/GillSans-01.eot"), url("./assets/fonts/GillSans-01/GillSans-01.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/GillSans-01/GillSans-01.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GillSans-UltraBold-07';
+  src: url("./assets/fonts/GillSans-UltraBold-07/GillSans-UltraBold-07.woff") format("woff"), url("./assets/fonts/GillSans-UltraBold-07/GillSans-UltraBold-07.woff2") format("woff2"), url("./assets/fonts/GillSans-UltraBold-07/GillSans-UltraBold-07.svg#GillSans-UltraBold-07") format("svg"), url("./assets/fonts/GillSans-UltraBold-07/GillSans-UltraBold-07.eot"), url("./assets/fonts/GillSans-UltraBold-07/GillSans-UltraBold-07.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/GillSans-UltraBold-07/GillSans-UltraBold-07.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GIN_Round';
+  src: url("./assets/fonts/GIN_Round/GIN_Round.woff") format("woff"), url("./assets/fonts/GIN_Round/GIN_Round.woff2") format("woff2"), url("./assets/fonts/GIN_Round/GIN_Round.eot"), url("./assets/fonts/GIN_Round/GIN_Round.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/GIN_Round/GIN_Round.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GIN_Round_Italic';
+  src: url("./assets/fonts/GIN_Round_Italic/GIN_Round_Italic.woff") format("woff"), url("./assets/fonts/GIN_Round_Italic/GIN_Round_Italic.woff2") format("woff2"), url("./assets/fonts/GIN_Round_Italic/GIN_Round_Italic.eot"), url("./assets/fonts/GIN_Round_Italic/GIN_Round_Italic.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/GIN_Round_Italic/GIN_Round_Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GIN_Italic';
+  src: url("./assets/fonts/GIN_Italic/GIN_Italic.woff") format("woff"), url("./assets/fonts/GIN_Italic/GIN_Italic.woff2") format("woff2"), url("./assets/fonts/GIN_Italic/GIN_Italic.eot"), url("./assets/fonts/GIN_Italic/GIN_Italic.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/GIN_Italic/GIN_Italic.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GIN_Regular';
+  src: url("./assets/fonts/GIN_Regular/GIN_Regular.woff") format("woff"), url("./assets/fonts/GIN_Regular/GIN_Regular.woff2") format("woff2"), url("./assets/fonts/GIN_Regular/GIN_Regular.eot"), url("./assets/fonts/GIN_Regular/GIN_Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/GIN_Regular/GIN_Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coves-Bold';
+  src: url("./assets/fonts/Coves-Bold/Coves-Bold.woff") format("woff"), url("./assets/fonts/Coves-Bold/Coves-Bold.woff2") format("woff2"), url("./assets/fonts/Coves-Bold/Coves-Bold.svg#Coves-Bold") format("svg"), url("./assets/fonts/Coves-Bold/Coves-Bold.eot"), url("./assets/fonts/Coves-Bold/Coves-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Coves-Bold/Coves-Bold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coves-Light';
+  src: url("./assets/fonts/Coves-Light/Coves-Light.woff") format("woff"), url("./assets/fonts/Coves-Light/Coves-Light.woff2") format("woff2"), url("./assets/fonts/Coves-Light/Coves-Light.svg#Coves-Light") format("svg"), url("./assets/fonts/Coves-Light/Coves-Light.eot"), url("./assets/fonts/Coves-Light/Coves-Light.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/Coves-Light/Coves-Light.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  margin-right: 15px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#logo a {
+  text-decoration: none;
+  font-family: 'GIN_Regular';
+  letter-spacing: -2px;
+  color: white;
+}
+
+#logo a:hover {
+  text-decoration: underline;
+}
+
+#sticker1 {
+  width: 80px;
+  position: absolute;
+  z-index: 10;
+  left: -60px;
+  bottom: 50px;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#sticker2 {
+  width: 40px;
+  position: absolute;
+  z-index: 10;
+  right: 100px;
+  top: 50px;
+}
+
+#sticker3 {
+  width: 130px;
+  position: absolute;
+  z-index: 10;
+  right: 30px;
+  top: 50px;
+}
+
+main {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+main h1 {
+  color: white;
+  font-family: 'GIN_Regular';
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+main h2 {
+  line-height: 65%;
+  color: white;
+  font-family: 'Coves-Bold';
+  font-size: 100px;
+}
+
+.effect {
+  background-color: white;
+  color: black;
+  font-family: 'GIN_Regular';
+  font-size: 53px;
+  text-decoration: underline line-through;
+}
+
+.making {
+  color: white;
+  font-family: 'GIN_Regular';
+  font-size: 75px;
+}
+
+.building {
+  color: white;
+  font-family: 'GIN_Italic';
+  font-size: 75px;
+}
+
+.real {
+  line-height: 80%;
+  color: white;
+  font-family: 'Coves-Bold';
+  font-size: 125px;
+}
+
+.under {
+  color: white;
+  font-family: 'GIN_Regular';
+  font-size: 80px;
+}
+
+main aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+aside ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Coves-Bold';
+  text-align: center;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+.vl {
+  border-left: 1px solid white;
+  height: 80px;
+  width: 5px;
+}
+
+.feature {
+  margin-top: 50px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature h2 {
+  font-family: 'GIN_Regular';
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature a {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature a.btn {
+  margin-top: 20px;
+  margin: 0 auto;
+  background-color: black;
+  font-family: 'GillSans-01';
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.feature a.btn:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+  -webkit-animation: fade .5s ease-in forwards;
+          animation: fade .5s ease-in forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 10;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 10;
+  }
+}
+
+section .wrapper {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.card img {
+  width: 200px;
+}
+
+.card p {
+  font-family: 'GillSans-01';
+  text-transform: uppercase;
+  line-height: 1.9;
+}
+
+.slices {
+  background-color: #eee;
+  padding: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.slices .title p {
+  font-family: 'GillSans-01';
+  text-transform: uppercase;
+  line-height: 1.9;
+}
+
+.slices-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.slices-img img {
+  width: 200px;
+}
+
+.slices-img img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.heading h2 {
+  font-family: 'GIN_Regular';
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading a {
+  margin: 0 auto;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading a.btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  background-color: black;
+  font-family: 'GillSans-01';
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.heading a.btn:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+  -webkit-animation: fade .5s ease-in forwards;
+          animation: fade .5s ease-in forwards;
+}
+
+.souls {
+  padding: 20vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.motto {
+  color: white;
+  font-family: 'GIN_Regular';
+  font-size: 70px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.souls span a {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.souls .contact {
+  position: relative;
+}
+
+.souls .contact p {
+  color: white;
+  font-family: 'Coves-Bold';
+  font-size: 16px;
+}
+
+.souls .contact div {
+  display: block;
+  margin-right: 100px;
+}
+
+footer {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  text-align: center;
+}
+
+footer .copyright {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+footer .copyright a {
+  font-family: 'GillSans-01';
+  font-size: 90px;
+  color: white;
+  text-decoration: none;
+}
+
+footer .copyright a:hover {
+  opacity: .5;
+}
+
+footer .copyright h3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Coves-Light';
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+footer .logo h3 {
+  color: white;
+  font-family: 'Coves-Light';
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+footer .logo h4 {
+  color: white;
+  font-family: 'Coves-Light';
+  font-size: 14px;
+}
+
+footer .logo h5 {
+  font-size: 30px;
+  color: white;
+  text-decoration: underline;
+  font-family: 'GIN_Italic';
+  margin-bottom: 20px;
+}
+
+footer .blank {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .logo p {
+  margin-top: 50px;
+  font-family: 'Beth Ellen', cursive;
+  color: #707070;
+  text-decoration: none;
+}
+
+.shop-header h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'GIN_Regular';
+  font-size: 80px;
+  opacity: .75;
+  white-space: nowrap;
+  width: 1200px;
+  left: 500px;
+}
+
+.shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cropped {
+  margin-top: 30px;
+  width: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shop img {
+  margin: 0 auto;
+  width: 700px;
+  margin: -10px 0px -250px -10px;
+}
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  z-index: -10;
+}
+
+.img-hover {
+  opacity: 1;
+}
+
+.cropped img:hover {
+  opacity: 0;
+}
+
+.shop a.btn {
+  position: absolute;
+  background-color: black;
+  font-family: 'GillSans-01';
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  bottom: 50px;
+  right: 300px;
+}
+
+.shop a.btn:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+  -webkit-animation: fade .5s ease-in forwards;
+          animation: fade .5s ease-in forwards;
+}
+
+.shop p {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'GIN_Round_Italic';
+  font-size: 30px;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+#pink-sticker {
+  width: 90px;
+  position: absolute;
+  z-index: 10;
+  left: 450px;
+  top: 150px;
+}
+
+#sticker4 {
+  width: 130px;
+  position: absolute;
+  z-index: 10;
+  right: 90px;
+  top: 450px;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#stickr4:hover {
+  opacity: .4;
+}
+
+#star {
+  width: 50px;
+  position: absolute;
+  z-index: 10;
+  right: 390px;
+  top: 50px;
+  -webkit-animation: spinandfade 1.9s linear infinite;
+  animation: spinandfade  1.9s linear infinite;
+}
+
+@-webkit-keyframes spinandfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes spinandfade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+#star2 {
+  width: 130px;
+  position: absolute;
+  z-index: 10;
+  right: 400px;
+  top: 70px;
+}
+
+#star3 {
+  width: 50px;
+  position: absolute;
+  z-index: 10;
+  right: 490px;
+  top: 90px;
+  -webkit-animation: spinandfade 2.4s linear infinite;
+  animation: spinandfade 2.4s linear infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .souls .contact div {
+    margin-top: 20px;
+    margin-right: -10px;
+  }
+  .souls .motto {
+    font-size: 30px;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .logo {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  footer .copyright {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .shop img {
+    margin: 0 auto;
+    width: 500px;
+    margin: -10px 0px -250px -10px;
+  }
+  .shop a.btn {
+    right: 200px;
+  }
+  .shop p {
+    font-size: 12px;
+    color: white;
+  }
+  .left {
+    z-index: 100;
+  }
+  main h1, main h2 {
+    font-size: 55px;
+  }
+  main .building {
+    font-size: 30px;
+  }
+  main .real {
+    font-size: 30px;
+  }
+  main .under {
+    font-size: 22px;
+  }
+  main #sticker1 {
+    left: -10px;
+    bottom: -90px;
+  }
+  #sticker4 {
+    right: 10px;
+    top: 190px;
+  }
+  #pink-sticker {
+    top: 20px;
+    left: 80px;
+  }
+  #star {
+    top: 20px;
+    right: 80px;
+  }
+  #star2 {
+    top: 20px;
+    right: 10px;
+  }
+  #star3 {
+    top: 90px;
+    right: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
