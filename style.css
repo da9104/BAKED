@@ -378,7 +378,7 @@ section .wrapper {
 
 .slices-img img {
   width: 200px;
-  hieght: 200px;
+  height: 200px;
 }
 
 .slices-img img:hover {
@@ -891,6 +891,9 @@ footer .logo p {
   }
   main h1, main h2 {
     font-size: 55px;
+  }
+  main .making {
+    font-size: 18px;
   }
   main .building {
     font-size: 30px;

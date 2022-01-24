@@ -368,7 +368,7 @@ section .wrapper {
 
 .slices-img img {
     width: 200px;
-    hieght: 200px;
+    height: 200px;
 }
 
 .slices-img img:hover {
@@ -869,6 +869,10 @@ footer .logo p {
         h1,h2 {
             font-size: 55px;
         }
+
+        .making {
+            font-size: 18px;
+        }
         .building {
             font-size: 30px;
         }
@@ -910,8 +914,3 @@ footer .logo p {
             }
             
 }
-
-
-// body {
-//     overflow-x: hidden;
-// }
