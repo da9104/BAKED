@@ -25,7 +25,7 @@
   
  </style>
 </head>
-<body class="skrollr skrollr-desktop">
+<body class="skrollr skrollr-mobile">
     <header data-aos="zoom-out">
         <nav>
          <h2 id='logo'><a href="/">BPAT</a></h2>
@@ -366,7 +366,10 @@
     <script src="./dist/skrollr.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
-    <script type="text/javascript">
+  
+  
+  
+  <script type="text/javascript">
       AOS.init();
     
       new Glide(".glide", {
@@ -385,22 +388,14 @@
         }
       }).mount();
 
-      skrollr.init(
-            {
+      if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+                skrollr.init({
                 forceHeight: false
-            }
-      );
-
-    //   $(document).on('scroll',function() {
-    //       $('h6').css('left', Math.max(500 - 0.35*window.scrollY, 100)
-    //       + "px") 
-    //   })    
-
-
-        // ——————————————————————————————————————————————————
-// TextScramble
-// ——————————————————————————————————————————————————
-
+                });
+        } else {
+                skrollr.init();
+        }
+   
 class TextScramble {
   constructor(el) {
     this.el = el
@@ -480,9 +475,7 @@ const next = () => {
   counter = (counter + 1) % phrases.length
 }
 
-next()
-
-
+next();
 
     </script>
   
