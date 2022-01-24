@@ -789,8 +789,23 @@ footer .logo p {
   }
   .cropped img {
     margin: 0 auto;
-    width: 300px;
+    width: 300px !important;
     margin: -10px 0px -250px -10px;
+  }
+  main h1 {
+    font-size: 16px;
+  }
+  main .building {
+    font-size: 14px;
+  }
+  main .real {
+    font-size: 20px;
+  }
+  main .under {
+    font-size: 18px;
+  }
+  main span {
+    font-size: 16px;
   }
 }
 

@@ -754,10 +754,29 @@ footer .logo p {
 
     .cropped img {
         margin: 0 auto;
-        width: 300px;
+        width: 300px !important;
         margin: -10px 0px -250px -10px;
     }
+
+    main {
+        h1 {
+            font-size: 16px;
+         }
+        .building {
+            font-size: 14px;
+        }
+        .real {
+            font-size: 20px;
+        }
+        .under {
+            font-size: 18px;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
 }
+
 
 @media only screen and (max-width: 600px) {
     .title {
