@@ -758,13 +758,21 @@ footer .logo p {
         margin: -10px 0px -250px -10px;
     }
 
+    p.making {
+        font-size: 14px !important;
+    }
+    .making {
+        font-size: 14px !important;
+    }
+
+    main h1 {
+        font-size: 16px !important;
+     }
+
     main {
-        h1 {
-            font-size: 16px;
-         }
-        .building {
-            font-size: 14px;
-        }
+       h2 {
+           font-size: 18px !important;
+       }
         .real {
             font-size: 20px;
         }
@@ -772,6 +780,9 @@ footer .logo p {
             font-size: 18px;
         }
         span {
+            font-size: 16px;
+        }
+        .effect {
             font-size: 16px;
         }
     }
