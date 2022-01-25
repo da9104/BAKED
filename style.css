@@ -162,6 +162,8 @@ nav ul li a:hover {
   z-index: 10;
   right: 100px;
   top: 50px;
+  -webkit-animation: spinandfade 1.9s linear infinite;
+  animation: spinandfade  1.9s linear infinite;
 }
 
 #sticker3 {
@@ -170,6 +172,8 @@ nav ul li a:hover {
   z-index: 10;
   right: 30px;
   top: 50px;
+  -webkit-animation: spinandfade 2.4s linear infinite;
+  animation: spinandfade 2.4s linear infinite;
 }
 
 main {
@@ -362,6 +366,10 @@ section .wrapper {
           flex-direction: row;
 }
 
+.slices .heading {
+  margin-left: 30px;
+}
+
 .slices .title p {
   font-family: 'GillSans-01';
   text-transform: uppercase;
@@ -480,6 +488,7 @@ section .wrapper {
 
 .souls .contact {
   position: relative;
+  margin-top: 50px;
 }
 
 .souls .contact p {
@@ -588,15 +597,22 @@ footer .logo p {
   text-decoration: none;
 }
 
-.shop-header h6 {
+.shop-header {
+  overflow: hidden;
+}
+
+.shop-header #crew {
   margin: 0;
   padding: 0;
   font-family: 'GIN_Regular';
   font-size: 80px;
   opacity: .75;
   white-space: nowrap;
-  width: 1200px;
-  left: 500px;
+  left: 6.6rem;
+  bottom: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: fixed;
 }
 
 .shop {
@@ -801,9 +817,17 @@ footer .logo p {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+    margin-left: 0;
   }
   .souls {
     padding: 10px;
+  }
+  .motto {
+    padding-top: 60px;
+  }
+  .contact {
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
   .shop a.btn {
     right: 150px !important;

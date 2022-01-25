@@ -272,7 +272,7 @@
             but also to see the world, 
             to see behind walls, 
             to draw closer, to find each other, and to feel. 
-            This is the purpose of our core mind.   
+            This is the core of our mind.   
         </p>
         
         <div class="contact">
@@ -390,6 +390,11 @@
             }
         }
       }).mount();
+
+      $(document).on('scroll', function() {
+          $('#crew').css('left', Math.max(1900 - 0.35*window.scrollY, 100)
+          + "px");
+      })
 
     //   if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
     //             skrollr.init({
