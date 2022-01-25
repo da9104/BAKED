@@ -480,7 +480,7 @@ section .wrapper {
   letter-spacing: -1px;
 }
 
-.souls span a {
+.souls a {
   font-size: 24px;
   text-align: center;
   margin: 0 auto;
@@ -628,17 +628,25 @@ footer .logo p {
 }
 
 .cropped {
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 0 auto !important;
   width: 700px;
   overflow: hidden;
   position: relative;
 }
 
-.shop img {
-  margin: 0 auto;
+.cropped img {
+  margin: 0 auto !important;
   width: 700px;
   margin: -10px 0px -250px -10px;
+}
+
+.cropped img:nth-child(1) {
+  margin: 0 auto !important;
+  width: 700px;
+  margin: -0px -0px -250px -0px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 10;
 }
 
 .img-hover {
@@ -793,7 +801,7 @@ footer .logo p {
   animation: spinandfade 2.4s linear infinite;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   nav ul li a {
     font-size: 12px;
   }
@@ -801,7 +809,7 @@ footer .logo p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 5px;
+    padding: 1px !important;
     padding-top: 50px;
     padding-bottom: 150px;
   }
@@ -820,7 +828,7 @@ footer .logo p {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
-    margin-left: 0;
+    margin-left: 0px !important;
   }
   .souls {
     padding: 10px;
@@ -836,11 +844,9 @@ footer .logo p {
     right: 150px !important;
   }
   .cropped {
-    margin: 0 auto;
     height: 300px;
   }
   .cropped img {
-    margin: 0 auto;
     width: 300px !important;
     margin: -5px 0px -250px -10px;
   }
@@ -895,12 +901,22 @@ footer .logo p {
             order: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin-left: 0;
+    margin-left: 0px !important;
   }
   .slices-img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .slices {
+    padding: 20px !important;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   .souls .contact div {
     margin-top: 20px;
@@ -925,10 +941,11 @@ footer .logo p {
         -ms-flex-order: 3;
             order: 3;
   }
-  .shop img {
-    margin: 0 auto;
+  .cropped img {
     width: 500px;
-    margin: -10px 0px -250px -10px;
+  }
+  .cropped img:nth-child(1) {
+    width: 500px;
   }
   .shop a.btn {
     right: 200px;

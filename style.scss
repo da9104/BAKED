@@ -446,13 +446,11 @@ section .wrapper {
       letter-spacing: -1px;
 }
 
-.souls span a {
-   //  align-items: flex-end;
+.souls a {
     font-size: 24px;
     text-align: center;
     margin: 0 auto;
 }
-
 
 .souls .contact {
     position: relative;
@@ -466,14 +464,7 @@ section .wrapper {
     font-size: 16px;
 }
 
-// .souls .contact {
-//     display:      block;
-//     margin-right: 100px;
-// }
-
-
 footer {
-    // padding-top: 100px;
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -580,18 +571,26 @@ footer .logo p {
 }
 
 .cropped {
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 0 auto !important;
     width: 700px; 
     overflow: hidden;
-    //border: 5px solid black;
     position: relative;
+   // display: inline-flex;
 }
 
-.shop img {
-    margin: 0 auto;
+.cropped img {
+    margin: 0 auto !important;
     width: 700px;
     margin: -10px 0px -250px -10px;
+}
+
+.cropped img:nth-child(1) {
+    margin: 0 auto !important;
+    width: 700px;
+    margin: -0px -0px -250px -0px !important;
+    object-fit: contain;
+    z-index: 10;
+    // position: absolute;
 }
 
 .img-hover {
@@ -604,6 +603,7 @@ footer .logo p {
     opacity: 0;
     transition: opacity .2s;
     z-index: -10;
+    // margin: 0 auto;
 }
 
 .img-hover {
@@ -615,8 +615,6 @@ footer .logo p {
 }
 
 .shop a.btn {
-    // margin-top: 20px;
-   // margin: 0 auto;
     position: absolute;
     background-color: black;
     font-family: 'GillSans-01';
@@ -751,13 +749,13 @@ footer .logo p {
 
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     nav ul li a {
         font-size: 12px;
     }
     .slices {
         justify-content: center;
-        padding: 5px;
+        padding: 1px !important;
         padding-top: 50px;
         padding-bottom: 150px;
     }
@@ -770,7 +768,7 @@ footer .logo p {
     }
     .heading {
         order: 0;
-        margin-left: 0;
+        margin-left: 0px !important;
     }
     .souls {
         padding: 10px;
@@ -787,15 +785,11 @@ footer .logo p {
         right: 150px !important;
         
     }
-
     .cropped {
-        margin: 0 auto;
         height: 300px;
     }
     .cropped img {
-        margin: 0 auto;
         width: 300px !important;
-    
         margin: -5px 0px -250px -10px;
     }
 
@@ -852,14 +846,19 @@ footer .logo p {
     .title {
         display: none;
     }
-   
     .heading {
         order: 0;
         flex-shrink: 0;
-        margin-left: 0;
+        margin-left: 0px !important;
     }
     .slices-img {
         order: 1;
+    }
+    .slices {
+        padding: 20px !important;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center !important;
     }
 
     .souls .contact div {
@@ -882,10 +881,12 @@ footer .logo p {
         order: 3;
     }
 
-    .shop img {
-        margin: 0 auto;
+    .cropped img {
         width: 500px;
-        margin: -10px 0px -250px -10px;
+    }
+
+    .cropped img:nth-child(1) {
+        width: 500px;
     }
 
     .shop a.btn {
